@@ -1,9 +1,11 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  background-image: url("./images/jeddah-background.jpg");
+  background-color: #0e2e4d;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+/*
 nav {
   background-color: #333;
   color: white;
@@ -27,7 +29,6 @@ section {
 }
 
 .background-image {
-  /* Add styling for the background image */
   background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190220/ourmid/pngtree-simple-summer-tourism-travel-image_9073.jpg");
   background-size: cover;
   color: white;
@@ -115,3 +116,4 @@ p {
 .team-member {
   margin-top: 30px;
 }
+*/
