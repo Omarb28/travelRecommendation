@@ -40,52 +40,35 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="travel_recommendation.html"
-                >Home</a
-              >
+              <a class="nav-link" href="travel_recommendation.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about_us.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact_us.html">Contact Us</a>
+              <a class="nav-link active" href="contact_us.html">Contact Us</a>
             </li>
           </ul>
-          <div class="d-flex">
+          <form class="d-flex" role="search">
             <input
               class="form-control me-2"
-              type="text"
+              type="search"
               placeholder="Search"
               aria-label="Search"
-              id="searchInput"
             />
-            <button
-              type="button"
-              class="btn btn-outline-success"
-              id="searchButton"
-            >
+            <button class="btn btn-outline-success" type="submit">
               Search
             </button>
-            <button type="button" class="btn btn-outline-info" id="clearButton">
-              Clear
-            </button>
-          </div>
+            <button class="btn btn-outline-info" type="submit">Clear</button>
+          </form>
         </div>
       </div>
     </nav>
     <div class="container text-center">
-      <div class="row">
-        <div class="col introduction">
-          <h1 class="fw-bolder">EXPLORE DREAM DESTINATION</h1>
-          <h5>
-            It encourages exploration of unfamiliar territories, embracing
-            diverse cultures and landscapes, while pursuing the desired
-            destination that captivates thje heart and ignites a sense of
-            wonder.
-          </h5>
-          <div>
-            <button type="button" class="btn btn-info">Book Now</button>
-          </div>
+      <div class="row introduction">
+        <div class="col">
+          <h1>CONTACT US</h1>
+          <p>Get in touch</p>
           <div class="social-icons">
             <a href="#" target="_blank">Facebook</a>
             |
@@ -94,8 +77,42 @@
             <a href="#" target="_blank">Instagram</a>
           </div>
         </div>
-        <div class="col introduction">
-          <div id="resultsContainer"></div>
+        <div class="col">
+          <form>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+          </form>
         </div>
       </div>
     </div>
