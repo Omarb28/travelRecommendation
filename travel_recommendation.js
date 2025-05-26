@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   fetch("travel_recommendation_api.json")
     .then((response) => response.json())
-    .then((data) => {const searchButton = document.querySelector("#searchButton");
+    .then((data) => {
+      const searchButton = document.querySelector("#searchButton");
       const clearButton = document.querySelector("#clearButton");
 
       searchButton.addEventListener("click", function () {
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
           type: "Country",
           name: country.name,
           imageUrl: country.cities[0].imageUrl,
-          description: country.cities[0].description
+          description: country.cities[0].description,
         });
       }
       country.cities.forEach((city) => {
@@ -36,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             type: "City",
             name: city.name,
             imageUrl: city.imageUrl,
-            description: city.description
+            description: city.description,
           });
         }
       });
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
           type: "Temple",
           name: temple.name,
           imageUrl: temple.imageUrl,
-          description: temple.description
+          description: temple.description,
         });
       }
     });
@@ -59,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
           type: "Beach",
           name: beach.name,
           imageUrl: beach.imageUrl,
-          description: beach.description
+          description: beach.description,
         });
       }
     });
@@ -75,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const resultElement = document.createElement("div");
       resultElement.innerHTML = `
                 <h3>${result.type}: ${result.name}</h3>
-                <img src="${result.imageUrl}" alt="${result.name}">
+                <img src="./images/${result.imageUrl}" alt="${result.name}">
                 <p>${result.description}</p>
             `;
       resultsContainer.appendChild(resultElement);
